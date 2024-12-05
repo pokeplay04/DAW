@@ -182,11 +182,25 @@ Entramos a la página y podremos ver en la URL el archivo agregado anteriormente
 
 ![image](https://github.com/user-attachments/assets/6b2ac68a-228e-4b71-a860-a6e8c724b307)
 
+A contoinuación instalaremos phpmyadmin, ya que ya tenemos el servidor Nginx con php
 
+```bash
+sudo apt install phpmyadmin -y
+```
 
+Al iniciar este comando, tras darle comenzará la instalación y al completarse aparecerá esta ventana, en la que elegiremos apache2
 
+![image](https://github.com/user-attachments/assets/0f429278-5d06-44c7-8e9b-3dd6628bf17d)
 
+Una vez elegido volverá a seguir descargandose y aparecerá esta ventana, en la que elegiremos si
 
+![image](https://github.com/user-attachments/assets/849d6c4f-ca9d-4c65-b6fe-2c2eced4ff1b)
+
+Tras esto pedirá que tengamos una contraseña, la cual introduciremos
+
+![image](https://github.com/user-attachments/assets/174cbceb-34cd-415c-aa42-dd4e309c7325)
+
+Una vez puesta y confirmada, ya habría terminado de instalarse, y ahora crearemos el enlace simbólico para phpmyadmin
 
 
 
