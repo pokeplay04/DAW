@@ -202,7 +202,8 @@ Tras esto pedirá que tengamos una contraseña, la cual introduciremos
 
 Una vez puesta y confirmada, ya habría terminado de instalarse, y ahora crearemos el enlace simbólico para phpmyadmin
 
+![image](https://github.com/user-attachments/assets/c01fb8ff-73e2-430a-9223-b3840e21b944)
 
+Y por último accedemos al dominio, tras esto, podríamos concluir, ya que phpmyadmin ya está instalada, y así terminaría esta práctica
 
-
-
+![image](https://github.com/user-attachments/assets/ce00ec93-2461-4988-9a02-732476b1f003)
