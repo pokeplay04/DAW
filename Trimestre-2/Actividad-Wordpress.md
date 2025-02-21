@@ -18,7 +18,7 @@ Luego de crearla comprobaremos si las IPs estan asignadas correctamente
 
 ![image](https://github.com/user-attachments/assets/ee8bc258-2aa3-443a-a7d9-ec2cd5951df6)
 
-
+Tras esto nos conectaremos mediante SSH ya que nos da error
 
 
 
