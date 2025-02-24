@@ -1,3 +1,6 @@
+# Instalación de Wordpress en instancia Debian(o Ubuntu) EC2 con soporte de base de datos RDS y EFS
+
+## 1. Creación de Instancia
 Para comenzar esta práctica tendremos que tener nuestra VPC ya creada la cual en mi caso se llama proyecto
 
 ![image](https://github.com/user-attachments/assets/21960531-c5cc-467a-be8a-9dfa248228fe)
@@ -22,6 +25,8 @@ Tras esto nos conectaremos a la instancia
 
 ![image](https://github.com/user-attachments/assets/3ba39a22-2f40-416e-b7b8-5cbddff8b88a)
 
+## 2. Instalación de Apache y PHP
+
 Tras esto instalaremos el servidor apache
 ```bash
 sudo apt update
@@ -33,6 +38,10 @@ sudo systemctl enable apache2
 ![image](https://github.com/user-attachments/assets/415f3c82-e15a-435c-91da-6ba40f5bb74f)
 ![image](https://github.com/user-attachments/assets/2e29945b-4ebe-4a1f-9106-4a490975bbbe)
 ![image](https://github.com/user-attachments/assets/5dc1e462-1ee6-43f4-8a6c-2d81b5211418)
+
+Una vez instalado Apache si accedemos a la IP pública de nuestra instancia podremos ver la página de inicio de apache
+
+![image](https://github.com/user-attachments/assets/fa499098-2100-4c36-a2a2-f38e6988373f)
 
 A continuación instalaremos PHP, primero confirmaremos que el paquete amazon-linux-extras está instalado en nuestro servidor, tras esto
 instalaremos php como módulo de Apache e instalaremos también MySQL
@@ -50,6 +59,8 @@ Comprobamos a continuación si PHP se ha instalado correctamente
 
 ![image](https://github.com/user-attachments/assets/7e0711df-5be3-4e69-8669-7e0bffa76e76)
 
+## 3. Creación de la Base de Datos
+
 Tras instalar PHP y MySql crearemos la base de datos
 
 ![image](https://github.com/user-attachments/assets/e55e768f-48e3-475d-b8b3-bf2f9fc747ca)
@@ -63,7 +74,40 @@ Tras todos estos pasos crearemos a la base de datos
 ![image](https://github.com/user-attachments/assets/ec5f9563-f468-4043-87b7-27c582cb185a)
 ![image](https://github.com/user-attachments/assets/f61d64b6-8a27-4b1d-bbc1-d14040ff8528)
 
+Una vez creada esta, podremos su punto de enlace en los detalles de la propia base de datos
 
+![image](https://github.com/user-attachments/assets/b892f5be-7ca1-46f5-8b7e-f101e4235bca)
+
+# 4. Elastic File System.
+
+Buscamos el apartado EFS y clicamos en crear un sistema de archivos
+
+![image](https://github.com/user-attachments/assets/71b226ee-3ddb-4d09-ad09-d2c4d16f4034)
+
+Le pondremos el nombre de almacenwordpress y elegiremos la vpc que estamos utilizando en la práctica
+
+![image](https://github.com/user-attachments/assets/9a4ae6e7-ffad-4f62-87d4-de28d543e83f)
+
+Una vez hecho esto le damos a crear, esta deberia de haberse creado y se veria asi
+
+![image](https://github.com/user-attachments/assets/a586ad52-f7f2-4cc6-bd6b-b61716850ee0)
+
+Si clicamos en nuestro sistema de archivos veremos un botoón que pone Asociar, el cual clicaremos
+para asociar nuestra instancia al EFS 
+
+![image](https://github.com/user-attachments/assets/8d34eec8-4f70-4bf1-91b6-ed8c32fb9fa4)
+
+Al darle a asociar nos aparecerá esto en pantalla, de las opciones que nos proporciona elegiremos la que pone mediante NFS
+
+![image](https://github.com/user-attachments/assets/0a3360ee-62ba-4add-b9fa-3aafafc0047f)
+
+Antes de aplicar ese comando tendremos que ejecutar el comando nfs-common y crearlo dentro de una carpeta efs 
+
+![image](https://github.com/user-attachments/assets/ee550754-cc93-4a89-ae08-ac9c4cb8daa7)
+
+Una vez hecho esto ejecutaremos el comando que nos habian proporcionado anteriormente
+
+![image](https://github.com/user-attachments/assets/43c051c3-f371-44b6-ace5-14cfc1c771fc)
 
 
 
