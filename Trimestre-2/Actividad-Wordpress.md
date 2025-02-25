@@ -105,9 +105,66 @@ Antes de aplicar ese comando tendremos que ejecutar el comando nfs-common y crea
 
 ![image](https://github.com/user-attachments/assets/ee550754-cc93-4a89-ae08-ac9c4cb8daa7)
 
-Una vez hecho esto ejecutaremos el comando que nos habian proporcionado anteriormente
+Una vez hecho esto ejecutaremos el comando que nos habian proporcionado anteriormente y ya tendríamos todo para instalar Wordpress
 
 ![image](https://github.com/user-attachments/assets/43c051c3-f371-44b6-ace5-14cfc1c771fc)
+
+# 5. Instalación Wordpress
+
+Accedemos al directory /var/www/html y metemos el siguiente comando
+
+```bash
+sudo wget http://wordpress.org/latest.tar.gz
+```
+
+![image](https://github.com/user-attachments/assets/e1222d47-e458-4df9-a287-eeff9d325887)
+
+A continuación descomprimimos el archivo que acabamos de descargar con el siguiente comando y revisamos que se haya descomprimido
+
+```bash
+tar -xf latest.tar.gz
+```
+
+![image](https://github.com/user-attachments/assets/6a54b460-9840-4105-a232-68ca71c1c22f)
+
+Tras esto tendremos que crear unas credenciales, nos conectaremos a la instancia de la base de datos
+mediante el punto de acceso de nuestra propia base de datos y poniendo nuestra contraseña
+
+```bash
+sudo apt install default-mysql-client
+sudo mysql -u admin -h bdwordpress.cztaa9wgx9dy.us-east-1.rds.amazonaws.com -p
+```
+
+![image](https://github.com/user-attachments/assets/cc27b875-f408-4384-8f55-892314f041cf)
+![image](https://github.com/user-attachments/assets/c103bf89-b283-4862-8c7c-e40d5963ecaa)
+
+Creamos la base de datos, el usuario y la contraseña
+
+```bash
+CREATE DATABASE wordpress; 
+CREATE USER 'usuario' IDENTIFIED BY 'usuario'; 
+GRANT ALL PRIVILEGES ON wordpress.* TO 'usuario'; 
+FLUSH PRIVILEGES;
+```
+
+Tras introducir estas lineas, si buscamos en el buscador nuestra IP publica mas /wordpress nos aparecerá esto en pantalla
+
+![image](https://github.com/user-attachments/assets/53b2eaa1-4bc1-4b70-b5a9-c9ef6458220b)
+
+Para continuar le daremos al botón de Let's go y rellenaremos los campos
+
+![image](https://github.com/user-attachments/assets/c03d149b-c988-4921-864d-f8107be3c77c)
+
+Una vez rellenados ya accederiamos a la base de datos y tendriamos wordpress listo para usar
+
+
+
+
+
+
+
+
+
 
 
 
