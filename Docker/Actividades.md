@@ -27,4 +27,34 @@ A continuación ejecutaremos el contenedor
 
 ![image](https://github.com/user-attachments/assets/076153b1-5379-46ba-8a89-bc466444798b)
 
+Tras ejecutar el contenedor nos crearemos una cuenta en Docker Hub
+
+![image](https://github.com/user-attachments/assets/6076f82f-b968-4798-9791-8eac559b6032)
+
+Y por último publicaremos la imagen, comprabando si esta se ha subido
+
+![image](https://github.com/user-attachments/assets/abc7220d-0906-4149-a352-a46f91f650ec)
+![image](https://github.com/user-attachments/assets/68b8e25b-8fae-4b75-a56a-3040bf168e54)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
