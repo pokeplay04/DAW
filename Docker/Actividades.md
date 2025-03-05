@@ -36,16 +36,21 @@ Y por último publicaremos la imagen, comprabando si esta se ha subido
 ![image](https://github.com/user-attachments/assets/abc7220d-0906-4149-a352-a46f91f650ec)
 ![image](https://github.com/user-attachments/assets/68b8e25b-8fae-4b75-a56a-3040bf168e54)
 
+## Ejercicio 3
 
+Comenzaremos este ejercicio descargándonos las siguientes imágenes
 
+![image](https://github.com/user-attachments/assets/a4ffa7cf-8617-46e5-bad3-15eebc007dd0)
 
+Tras descargarlas las mostramos
 
+![image](https://github.com/user-attachments/assets/eba28d9c-f967-45d2-85df-4c02523bdddf)
 
+Tras mostrarlas ejecutaremos los contenedores de hello-world
 
-
-
-
-
+![image](https://github.com/user-attachments/assets/1742e115-404b-431e-a825-b3e89b9f92f3)
+![image](https://github.com/user-attachments/assets/da199e56-ce2d-444a-a2be-3f98b5cc9a94)
+![image](https://github.com/user-attachments/assets/28812a08-2536-4d0d-a43f-6f24431ae2ec)
 
 
 
