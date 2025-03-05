@@ -52,7 +52,24 @@ Tras mostrarlas ejecutaremos los contenedores de hello-world
 ![image](https://github.com/user-attachments/assets/da199e56-ce2d-444a-a2be-3f98b5cc9a94)
 ![image](https://github.com/user-attachments/assets/28812a08-2536-4d0d-a43f-6f24431ae2ec)
 
+Una vez ejecutados los contenedores, mostramos los que se están ejecutando. Como se ve en la imagen no hay contenedores
+ejecutados ya que tras buscar información he leído que los contenedores hello-world son efímeros (se ejecutan y detienen automáticamente)
 
+![image](https://github.com/user-attachments/assets/f7b54a3a-dcb6-4191-afba-b68df5ff1b5e)
+
+Tras esto pararemos los contenedores myhello1 y 2
+
+![image](https://github.com/user-attachments/assets/d9b68af0-db98-4f88-b50e-76a7ac8e35d7)
+
+A continuación borraremos el contenedor myhello1, como se aprecia en la imagen se ven el contenedor 2 y 3 pero no el 1
+
+![image](https://github.com/user-attachments/assets/8ca6caa3-e1ea-4608-95f8-d603dcce7bad)
+
+Si mostramos los contenedores en ejecución no habrá ninguno por lo que menionamos anteriormente
+
+![image](https://github.com/user-attachments/assets/f7b54a3a-dcb6-4191-afba-b68df5ff1b5e)
+
+Y por último borraremos todos los contenedores
 
 
 
