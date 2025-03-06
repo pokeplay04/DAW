@@ -97,20 +97,26 @@ Tras esto entramos a localhost:5000 para comprobar que funcione
 
 ![image](https://github.com/user-attachments/assets/54131f58-5440-4f16-96e1-93074f12adec)
 
+Una vez terminado el ejemplo 1 continuaremos con el ejemplo 2 el cual sigue casi los mismos pasos, creamos la imagen
 
+![image](https://github.com/user-attachments/assets/e070a61e-cc76-4ba1-8acb-1ee020921a86)
 
+Tras crear la imagen ejecutamos el contenedor
 
+![image](https://github.com/user-attachments/assets/30c390e3-2377-41cb-97cb-5010bb232a59)
 
+Y accedemos a localhost:5001 para comprobar que este funcione
 
+![image](https://github.com/user-attachments/assets/f191b4b8-cefb-450b-a38b-058b7038abd3)
 
+Con esto concluye el ejemplo 2 y pasamos al tercero y último, volvemos a hacer un dockerfile y tras esto
+volvemos a construir otra imagen Docker
 
+![image](https://github.com/user-attachments/assets/0dbc2ca5-7667-4db0-bf3b-e16dcee10ef1)
 
+Una vez construida la imagen vamos por el contenedor
 
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/b0386e7d-bcf8-4378-bf0f-e692a36afc8a)
 
 
 
