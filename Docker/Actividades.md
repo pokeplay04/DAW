@@ -81,17 +81,21 @@ Clonamos el repositorio de git y accedemos a el
 
 ![image](https://github.com/user-attachments/assets/0dbbf80b-ce51-4db2-a0f2-f42cae504937)
 
+Y tras clonarlo creamos la imagen Docker
 
+![image](https://github.com/user-attachments/assets/4d344b4d-20bb-433b-8da1-501386f58041)
 
+Una vez creada la imagen Docker, ejecutamos el contendor, el codigo que vemos es el ID
 
+![image](https://github.com/user-attachments/assets/e2d28442-afd0-415c-9d18-833e390c41c0)
 
+Comprobamos si se ha creado correctamente y miramos su ID
 
+![image](https://github.com/user-attachments/assets/a7181cae-3605-40ea-9a44-be4b286db5d9)
 
+Tras esto entramos a localhost:5000 para comprobar que funcione
 
-
-
-
-
+![image](https://github.com/user-attachments/assets/54131f58-5440-4f16-96e1-93074f12adec)
 
 
 
