@@ -71,6 +71,37 @@ Si mostramos los contenedores en ejecución no habrá ninguno por lo que meniona
 
 Y por último borraremos todos los contenedores
 
+```bash
+docker rm $(docker ps -aq)
+```
+
+## Actividad 4
+
+Clonamos el repositorio de git y accedemos a el
+
+![image](https://github.com/user-attachments/assets/0dbbf80b-ce51-4db2-a0f2-f42cae504937)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
