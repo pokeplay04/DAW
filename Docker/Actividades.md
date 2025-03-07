@@ -125,7 +125,7 @@ Entramos para comprobar el localhosst y vemos que aparece lo siguiente
 
 ## ACTIVIDAD 5
 
-
+Creamos el fichero guestbook
 
 
 
