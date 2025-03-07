@@ -125,13 +125,17 @@ Entramos para comprobar el localhosst y vemos que aparece lo siguiente
 
 ## ACTIVIDAD 5
 
-Creamos el fichero guestbook
+Creamos el fichero guestbook y dentro todos los archivos necesarios junto con el docker.compose.yaml
 
+![image](https://github.com/user-attachments/assets/3d1b1a3c-2c9e-43c9-8b6e-66680213eed9)
 
+En la consola volveremos a poner como anteriormente los siguientes comandos
 
+![image](https://github.com/user-attachments/assets/abf30ab6-bd19-4890-87e0-5ea44e784a94)
 
+Accedemos al localhost del frontend y enviamos un mensaje
 
-
+![image](https://github.com/user-attachments/assets/67ab80b2-a123-4c40-a0ec-66bad96e8693)
 
 
 
