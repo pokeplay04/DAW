@@ -125,17 +125,44 @@ Entramos para comprobar el localhosst y vemos que aparece lo siguiente
 
 ## ACTIVIDAD 5
 
-Creamos el fichero guestbook y dentro todos los archivos necesarios junto con el docker.compose.yaml
+Para comenzar este apartado crearemos la carpeta temperaturas y dentro crearemos el fichero docker-compose.yml y una carpeta que 
+se llamará app y dentro tendrá el dockerfile y la app de python.
+Tras esto nos ubicaremos en la carpeta de temperatura y utilizar el siguiente comando ```bash docker compose up -d ```
 
-![image](https://github.com/user-attachments/assets/3d1b1a3c-2c9e-43c9-8b6e-66680213eed9)
+![image](https://github.com/user-attachments/assets/9d89cc71-23d9-4d47-b858-324a257fa600)
 
-En la consola volveremos a poner como anteriormente los siguientes comandos
+A continuación podemos listar los contenedores
 
-![image](https://github.com/user-attachments/assets/abf30ab6-bd19-4890-87e0-5ea44e784a94)
+![image](https://github.com/user-attachments/assets/c69aaebe-6913-4409-acf7-6e633ecc2a32)
 
-Accedemos al localhost del frontend y enviamos un mensaje
+Tras esto si accedemos a localhost:8081 nos aparecerá esto
 
-![image](https://github.com/user-attachments/assets/67ab80b2-a123-4c40-a0ec-66bad96e8693)
+![image](https://github.com/user-attachments/assets/693a1e67-fd9e-4fe0-888c-4d2ab0a17ba2)
+
+El siguiente ejemplo que haremos será el de Wordpress, para comenzar editaremos el docker-compose como pone en la guía,
+tras esto volveremos a utilizar el mismo comando pero esta vez en la carpeta que hayamos puesto el docker-compose.yaml ```bash docker compose up -d ```
+
+![image](https://github.com/user-attachments/assets/800e8e71-28f2-4b83-897d-7dcae944cda3)
+
+Una vez hecho podremos volver a listar los contenedores activos si queremos y acceder al localhost para comprobar si funciona
+
+![image](https://github.com/user-attachments/assets/f38c5820-5698-4fe6-9fb3-0688ea64717c)
+
+El último ejemplo que realizaremos de la actividad 5 será el guestbook, lo mismo, en la carpeta de guestbook pegamos el docker-compose que nos ofrece el ejercicio
+y creamos el escenario con ```bash docker compose up -d ```
+
+![image](https://github.com/user-attachments/assets/95cc2973-e8be-4160-850a-5cafbfc065a6)
+
+Tras esto vemos si se han creado los contenedores y comprobaremos si se puede acceder correctamente al localhost
+
+![image](https://github.com/user-attachments/assets/622e335e-eb8b-4dc5-9044-07362839825a)
+![image](https://github.com/user-attachments/assets/9acdb443-b01e-494a-820b-d0885af1d412)
+
+## ACTIVIDAD 6
+
+
+
+
 
 
 
