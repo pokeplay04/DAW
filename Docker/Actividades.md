@@ -109,14 +109,43 @@ Y accedemos a localhost:5001 para comprobar que este funcione
 
 ![image](https://github.com/user-attachments/assets/f191b4b8-cefb-450b-a38b-058b7038abd3)
 
-Con esto concluye el ejemplo 2 y pasamos al tercero y último, volvemos a hacer un dockerfile y tras esto
-volvemos a construir otra imagen Docker
+Con esto concluye el ejemplo 2 y pasamos al tercero y último, creamos la carpeta docker_wordpress
 
-![image](https://github.com/user-attachments/assets/0dbc2ca5-7667-4db0-bf3b-e16dcee10ef1)
+```bash
+C:\Users\petar>mkdir wordpress_docker
+```
 
-Una vez construida la imagen vamos por el contenedor
+Una vez creada esta carpeta dentro creamos un archivo docker-compose.yml y ejecutamos ```bash docker-compose up -d ```
 
-![image](https://github.com/user-attachments/assets/b0386e7d-bcf8-4378-bf0f-e692a36afc8a)
+![image](https://github.com/user-attachments/assets/7d9c25b2-40e7-4138-aaa7-cb34e67bfd0c)
+
+Entramos para comprobar el localhosst y vemos que aparece lo siguiente
+
+![image](https://github.com/user-attachments/assets/a6769a4f-5914-4b2d-8ed2-961004ce29c8)
+
+## ACTIVIDAD 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
