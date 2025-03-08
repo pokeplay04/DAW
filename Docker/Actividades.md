@@ -160,8 +160,10 @@ Tras esto vemos si se han creado los contenedores y comprobaremos si se puede ac
 
 ## ACTIVIDAD 6
 
+Para comenzar con esta actividad creamos el dockerfile como está puesto en el ejemplo, y tras eso ejecutamos la imagen
+con el siguiente comando ```bash docker build -t josedom24/ejemplo1:v1 . ```
 
-
+![image](https://github.com/user-attachments/assets/c0041f14-99da-4b7c-8358-49221e45a486)
 
 
 
