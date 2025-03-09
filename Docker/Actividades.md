@@ -160,26 +160,97 @@ Tras esto vemos si se han creado los contenedores y comprobaremos si se puede ac
 
 ## ACTIVIDAD 6
 
+### Ejemplo 1 página estática
+
 Para comenzar con esta actividad creamos el dockerfile como está puesto en el ejemplo, y tras eso ejecutamos la imagen
 con el siguiente comando ```bash docker build -t josedom24/ejemplo1:v1 . ```
 
 ![image](https://github.com/user-attachments/assets/c0041f14-99da-4b7c-8358-49221e45a486)
 
+Tras esto entraremos en el localhost para comprobar que esta funcione correctamente, se debería de mostrar el texto que tenemos en el index.html
+que en mi caso es Docker error wasaa
 
+![image](https://github.com/user-attachments/assets/7b988254-a563-4576-ad84-e218fe21f4c8)
 
+### Ejemplo 2 aplicación PHP
 
+El siguiente ejemplo que haremos será el ejemplo 2 al cual yo llamaré ejemplo3, para comenzar crearemos la imagen
 
+![image](https://github.com/user-attachments/assets/ec06b85f-14d1-4994-8879-1fff780da8ce)
 
+Y tras crearlo comprobaremos que se haya creado
 
+![image](https://github.com/user-attachments/assets/df361fb8-26e1-4a60-95b0-4d3860c1d4f8)
 
+Una vez comprobado entraremos a la pagina y a su apartado phpinfo
 
+![image](https://github.com/user-attachments/assets/cc24b284-c35e-4d3b-a65b-8459d3872af6)
 
+En la version 2 cambiaremos el docker file y volveremos a crear la imagen y el contenedor
 
+```bash
+docker build -t josedom24/ejemplo2:v2 .
+docker run -d -p 80:80 --name ejemplo2 josedom24/ejemplo2:v2
+```
+![image](https://github.com/user-attachments/assets/975b216d-ff85-470d-ab2e-9eee2be723a1)
+![image](https://github.com/user-attachments/assets/e390a1a3-44fc-45ae-9971-965e9dfc2471)
 
+Tras esto accedemos al localhost para comprobar que funcione correctamente
 
+![image](https://github.com/user-attachments/assets/29b40f02-2964-4cc7-889b-f7657ae2455f)
 
+### Ejemplo 3 aplicación Python
 
+Comenzamos cambiando el contenido del dockerfile
 
+```bash
+# syntax=docker/dockerfile:1
+FROM debian:12
+RUN apt-get update && apt-get install -y python3-pip  && apt-get clean && rm -rf /var/lib/apt/lists/*
+WORKDIR /usr/share/app
+COPY app .
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
+EXPOSE 3000
+CMD python3 app.py
+```
 
+Comenzamos creando la imagen y comprobando que se haya creado
 
+```bash
+docker build -t josedom24/ejemplo3:v1 .
+docker images
+```
+
+![image](https://github.com/user-attachments/assets/70ce9cf9-90b0-4952-a109-ea66200f6a2c)
+![image](https://github.com/user-attachments/assets/eedef5bb-8324-414d-980f-b6a0b11ea83e)
+
+Una vez creada la imgagen crearemos el contenedor
+
+![image](https://github.com/user-attachments/assets/80a8c462-65a1-4781-891c-0c5666093e83)
+
+Accedemos al localhost para comprobar de que funcione
+
+![image](https://github.com/user-attachments/assets/aeb8e8b0-f8e3-4517-98a6-79837b5f3418)
+
+En la versión cambiamos el dockerfile que nos facilita la guía
+
+```bash
+# syntax=docker/dockerfile:1
+FROM python:3.12.1-bookworm
+WORKDIR /usr/share/app
+COPY app .
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 3000
+CMD python app.py
+```
+
+Tras esto volveremos a crear la imagen y el contenedor 
+
+![image](https://github.com/user-attachments/assets/58bb7db1-a65e-4deb-ae0b-f633a4d8cb7b)
+![image](https://github.com/user-attachments/assets/bfc0a6d9-8de3-4bf7-bb72-355eb38e5c9e)
+
+Tras cambiar el dockerfile veremos que el unico cambio visible sería el hostname ya que
+no hemos cambiado nada del contenido 
+
+![image](https://github.com/user-attachments/assets/0d798d38-d615-4bb9-976e-c15c23598269)
 
